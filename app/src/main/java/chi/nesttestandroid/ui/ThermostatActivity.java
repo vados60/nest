@@ -49,6 +49,7 @@ public class ThermostatActivity extends BaseActivity implements Listener.Thermos
         mListener = new Listener.Builder()
                 .setThermostatListener(this)
                 .build();
+
     }
 
     @Override

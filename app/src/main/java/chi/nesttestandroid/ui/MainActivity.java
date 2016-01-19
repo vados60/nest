@@ -61,6 +61,7 @@ public class MainActivity extends BaseActivity implements NestAPI.Authentication
             case AUTH_TOKEN_REQUEST_CODE:
                 AccessToken accessToken = (AccessToken) data.getParcelableExtra(ACCESS_TOKEN_KEY);
                 Settings.saveAuthToken(this, accessToken);
+                authenticate(accessToken);
                 break;
         }
     }
